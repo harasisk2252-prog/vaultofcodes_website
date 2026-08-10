@@ -1,0 +1,675 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+
+    min-height: 100vh;
+
+    color: #172033;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(99, 102, 241, 0.18),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(6, 182, 212, 0.16),
+            transparent 30%
+        ),
+        #f8fafc;
+}
+
+.page {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    max-width: 1400px;
+
+    margin: auto;
+}
+
+
+.intro-section {
+
+    padding: 55px 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #172033;
+}
+
+
+.logo-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    color: white;
+
+    font-size: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #0891b2
+    );
+
+    box-shadow:
+        0 8px 20px rgba(79, 70, 229, 0.25);
+}
+
+
+
+.intro-content {
+
+    max-width: 570px;
+
+    margin-top: 70px;
+}
+
+
+.tag {
+
+    display: inline-block;
+
+    color: #4f46e5;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+.intro-content h1 {
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+.intro-content h1 span {
+
+    background: linear-gradient(
+        90deg,
+        #4f46e5,
+        #0891b2
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+.intro-content > p {
+
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    max-width: 500px;
+}
+.features {
+
+    margin-top: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+.feature {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+.feature-icon {
+
+    min-width: 44px;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+
+    font-size: 18px;
+}
+
+
+.feature h3 {
+
+    font-size: 15px;
+
+    margin-bottom: 3px;
+}
+
+
+.feature p {
+
+    font-size: 13px;
+
+    color: #64748b;
+}
+
+
+/* =====================================
+   RIGHT SECTION
+===================================== */
+
+.verification-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding: 50px 7%;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    border-left: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.verification-card {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid rgba(148, 163, 184, 0.25);
+
+    box-shadow:
+        0 25px 60px rgba(15, 23, 42, 0.10);
+
+    backdrop-filter: blur(15px);
+
+    animation: cardAppear 0.7s ease;
+}
+
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================
+   CARD ICON
+===================================== */
+
+.card-icon {
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #0891b2
+    );
+
+    color: white;
+
+    font-size: 26px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(79, 70, 229, 0.25);
+}
+
+
+.card-label {
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: #4f46e5;
+}
+
+
+.verification-card h2 {
+
+    font-size: 32px;
+
+    margin-top: 8px;
+
+    margin-bottom: 10px;
+}
+
+
+.description {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+form label {
+
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 9px;
+}
+
+
+.input-wrapper {
+
+    position: relative;
+
+    margin-bottom: 18px;
+}
+
+
+.input-icon {
+
+    position: absolute;
+
+    left: 16px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #94a3b8;
+
+    font-weight: 700;
+}
+
+
+input {
+
+    width: 100%;
+
+    height: 55px;
+
+    border: 1.5px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    padding: 0 18px 0 43px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #172033;
+
+    outline: none;
+
+    background: #f8fafc;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+input:focus {
+
+    border-color: #6366f1;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(99, 102, 241, 0.10);
+}
+
+
+input::placeholder {
+
+    color: #94a3b8;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+button {
+
+    width: 100%;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #0891b2
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(79, 70, 229, 0.25);
+}
+
+
+button:active {
+
+    transform: translateY(0);
+}
+
+
+.arrow {
+
+    font-size: 18px;
+}
+
+
+/* =====================================
+   RESULT
+===================================== */
+
+.result {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.result.success {
+
+    display: block;
+
+    color: #166534;
+
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+}
+
+
+.result.error {
+
+    display: block;
+
+    color: #b91c1c;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+}
+
+
+/* =====================================
+   HELP TEXT
+===================================== */
+
+.help-text {
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+.help-text span {
+
+    margin-right: 5px;
+}
+
+
+/* =====================================
+   COPYRIGHT
+===================================== */
+
+.copyright {
+
+    margin-top: 25px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .page {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .intro-section {
+
+        padding: 45px 7%;
+    }
+
+
+    .intro-content {
+
+        margin-top: 60px;
+    }
+
+
+    .intro-content h1 {
+
+        font-size: 48px;
+    }
+
+
+    .verification-section {
+
+        border-left: none;
+
+        border-top: 1px solid rgba(148, 163, 184, 0.15);
+
+        padding: 60px 7%;
+    }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 550px) {
+
+    .intro-section {
+
+        padding: 30px 6%;
+    }
+
+
+    .intro-content {
+
+        margin-top: 45px;
+    }
+
+
+    .intro-content h1 {
+
+        font-size: 38px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .intro-content > p {
+
+        font-size: 15px;
+    }
+
+
+    .verification-section {
+
+        padding: 40px 6%;
+    }
+
+
+    .verification-card {
+
+        padding: 30px 22px;
+
+        border-radius: 20px;
+    }
+
+
+    .verification-card h2 {
+
+        font-size: 27px;
+    }
+}

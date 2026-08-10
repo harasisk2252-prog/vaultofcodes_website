@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificate Verification | VaultofCodes</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <!-- Left Information Section -->
+        <section class="intro-section">
+
+            <div class="logo">
+                <div class="logo-icon">V</div>
+                <span>VaultofCodes</span>
+            </div>
+
+            <div class="intro-content">
+
+                <span class="tag">CERTIFICATE PORTAL</span>
+
+                <h1>
+                    Verify your
+                    <span>certificate</span>
+                    with confidence.
+                </h1>
+
+                <p>
+                    Enter your certificate ID below to instantly verify
+                    the authenticity of a VaultofCodes certificate.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <h3>Instant Verification</h3>
+                            <p>Get your verification result in seconds.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">🔒</div>
+                        <div>
+                            <h3>Secure & Reliable</h3>
+                            <p>Verify certificates using their unique ID.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <h3>Easy to Use</h3>
+                            <p>A simple and user-friendly verification process.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Verification Section -->
+        <section class="verification-section">
+
+            <div class="verification-card">
+
+                <div class="card-icon">
+                    ✓
+                </div>
+
+                <span class="card-label">CERTIFICATE VERIFICATION</span>
+
+                <h2>Verify Certificate</h2>
+
+                <p class="description">
+                    Enter the unique certificate ID to check whether
+                    your certificate is valid.
+                </p>
+
+
+                <!-- Form -->
+                <form id="certificateForm">
+
+                    <label for="certificateId">
+                        Certificate ID
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">#</span>
+
+                        <input
+                            type="text"
+                            id="certificateId"
+                            placeholder="e.g. VOC-2024-12345"
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                    <button type="submit" id="verifyBtn">
+                        <span>Verify Certificate</span>
+                        <span class="arrow">→</span>
+                    </button>
+
+                </form>
+
+
+                <!-- Result -->
+                <div id="result" class="result"></div>
+
+
+                <div class="help-text">
+                    <span>💡</span>
+                    Your certificate ID can be found on your
+                    VaultofCodes certificate.
+                </div>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 VaultofCodes · Certificate Verification Portal
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
