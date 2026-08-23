@@ -1,11 +1,3 @@
-// =====================================
-// CERTIFICATE DATA
-// =====================================
-
-// Demo certificates
-// You can replace these with the certificates
-// provided in your original starter code.
-
 const certificates = {
 
     "VOC-2024-12345": {
@@ -32,9 +24,6 @@ const certificates = {
 };
 
 
-// =====================================
-// GET HTML ELEMENTS
-// =====================================
 
 const form = document.getElementById("certificateForm");
 
@@ -45,29 +34,23 @@ const result = document.getElementById("result");
 const button = document.getElementById("verifyBtn");
 
 
-// =====================================
-// FORM SUBMISSION
-// =====================================
+
 
 form.addEventListener("submit", function (event) {
 
     event.preventDefault();
 
 
-    // Get certificate ID
+    
 
     const certificateId =
         input.value.trim().toUpperCase();
 
 
-    // Clear previous result
-
     result.className = "result";
 
     result.innerHTML = "";
 
-
-    // Check empty input
 
     if (certificateId === "") {
 
@@ -83,14 +66,12 @@ form.addEventListener("submit", function (event) {
     }
 
 
-    // Show loading state
-
     button.disabled = true;
 
     button.innerHTML = "Verifying...";
 
 
-    // Small delay for better user experience
+    
 
     setTimeout(function () {
 
@@ -98,9 +79,7 @@ form.addEventListener("submit", function (event) {
             certificates[certificateId];
 
 
-        // =====================================
-        // VALID CERTIFICATE
-        // =====================================
+        
 
         if (certificate) {
 
@@ -133,9 +112,7 @@ form.addEventListener("submit", function (event) {
         }
 
 
-        // =====================================
-        // INVALID CERTIFICATE
-        // =====================================
+        //invalid certificate 
 
         else {
 
@@ -158,8 +135,7 @@ form.addEventListener("submit", function (event) {
         }
 
 
-        // Restore button
-
+        //restore button
         button.disabled = false;
 
         button.innerHTML = `
